@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <!--VER QUE SE PUEDE HACER ACA PARA SALIR-->
+    <form action="/test">
+        <button>Hacer Test</button>
+    </form>
+    <form action="/login">
+        <button>Salir</button>
+    </form>
+    <form>
+        <button>Cursos</button>
+    </form>
+
+    <div class="contenedor"> 
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="/static/profile.jpg" width="200"
+                alt = "Foto de perfil">
+            </div>
+            <div class="profile-nav-info">
+                <h3 class="user-name"> {{nombre}} </h3>
+                <div class = "address">
+                    <p class="state">Penguin Alummni
+                    </p>
+                    <span class="country">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main-bd">
+            <div class="left-side">
+                <div class="profile-side">
+                    <p class="user-mailFernando">
+                    <i class="fa fa-envelope"></i> {{usuario}}
+                    </p>
+                    <div class="user-bio">
+                        <p class="bio">
+                        Welcome!
+                        </p>
+                    </div>
+                    <div class="profile-bth">
+                    </div>
+                    <div class="user-rating">
+                        <h3 class="rating">WEB</h3>
+                        
+                        <div class="rate_web">
+                            <i class="fa fa-medal"></i>
+                            <i class="fa fa-medal"></i>
+                        </div>
+                        <h3 class="rating">MOBILE</h3>
+                        <div class="rate_mobile">
+                            <i class="fa fa-medal"></i>
+                            <i class="fa fa-medal"></i>
+                        </div>
+                        <h3 class="rating">PROGRAMACION EMBEBIDA</h3>
+                        <div class="rate_embebida">
+                            <i class="fa fa-medal"></i>
+                            <i class="fa fa-medal"></i>
+                            <i class="fa fa-medal"></i>
+                            <i class="fa fa-medal"></i>
+                            <i class="fa fa-medal"></i>
+                        </div>
+                        
+                        <span class="no-user"><span>4</span>&nbsp;&nbsp;cursos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="nav">
+                <ul>
+                    <li onclick="tabs(0)" class="user-post active"> Posts</li>
+                    <li onclick="tabs(1)" class="user-review">Reviews</li>
+                    <li onclick="tabs(2)" class="user-setting">Settings</li>
+                </ul>
+            </div>
+            <div class="profile-body">
+                <div class="profile-post tab">
+                    <h1>Your Posts</h1>
+                    <p>
+                        Los Desarrolladores Web diseñan, crean y realizan mantenimiento a páginas y aplicaciones web, en tal sentido, trabajan en sitios de internet y de intranet. Por lo general, son empleados por empresas especializadas en el desarrollo de programas especializados o en consultoría informática. 
+                        Estos profesionales tienen la opción de trabajar directamente para la corporación o de manera independiente o a destajo.
+                    </p>
+                </div>
+                <div class="profile-rewiew tab">
+                    <h1>User Reviews</h1>
+                    <p>Acá van a ir los pinches cursos.</p>
+                </div>
+                <div class="profile-setting tab">
+                    <h1>Account Setting</h1>
+                    <p>Lalalallallala</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
